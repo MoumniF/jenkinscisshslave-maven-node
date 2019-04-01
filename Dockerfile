@@ -14,4 +14,4 @@ RUN apt install nodejs -y
 RUN node --version
 RUN npm --version
 RUN npm install -g @angular/cli
-RUN ng -v
+RUN ng version
