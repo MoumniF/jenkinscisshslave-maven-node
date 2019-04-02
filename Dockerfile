@@ -4,6 +4,9 @@ FROM jenkinsci/ssh-slave
 RUN apt-get update -y
 RUN apt-get install curl -y
 
+# Java informations
+RUN java -version
+
 # Installation de Maven (OpenJDK 8 est présent dans jenkinsci/ssh-slave)
 RUN apt-get install maven -y
 RUN mvn -version
