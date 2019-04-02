@@ -13,5 +13,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt install nodejs -y
 RUN node --version
 RUN npm --version
+
+#Installation de angular cli
 RUN npm install -g @angular/cli
 RUN ng version
