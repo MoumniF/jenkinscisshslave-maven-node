@@ -2,7 +2,7 @@ FROM jenkinsci/ssh-slave
 
 # Update et installation des misc 
 RUN apt-get update -y
-RUN apt-get install curl openjdk-11-jdk -y
+RUN apt-get install curl default-jdk -y
 
 # Java informations
 RUN java -version
