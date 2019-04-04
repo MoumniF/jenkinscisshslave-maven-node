@@ -7,6 +7,7 @@ RUN apt-get install curl -y
 # Java informations
 RUN java -version
 RUN apt-get install --only-upgrade openjdk-8-jdk -y
+RUN java -version
 
 # Installation de Maven (OpenJDK 8 est présent dans jenkinsci/ssh-slave)
 RUN apt-get install maven -y
