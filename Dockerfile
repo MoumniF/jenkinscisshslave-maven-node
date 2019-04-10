@@ -27,5 +27,4 @@ RUN ng version
 RUN apt install iptables sudo -y
 RUN adduser user1
 RUN adduser user1 sudo
-RUN su - user1
-RUN sudo iptables -L
+RUN su - user1 -c 'sudo iptables -L'
