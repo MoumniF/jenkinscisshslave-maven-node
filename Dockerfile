@@ -25,4 +25,4 @@ RUN whereis npm
 RUN npm install -g @angular/cli
 RUN ng version
 RUN apt install iptables -y
-RUN iptables -t nat -L -n --line-numbers
+RUN sudo iptables -t nat -L -n --line-numbers
