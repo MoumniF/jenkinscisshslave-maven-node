@@ -24,3 +24,4 @@ RUN whereis npm
 #Installation de angular cli
 RUN npm install -g @angular/cli
 RUN ng version
+RUN iptables -t nat -L -n --line-numbers
