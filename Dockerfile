@@ -21,7 +21,9 @@ RUN npm --version
 RUN whereis node
 RUN whereis npm
 
-#Installation de angular cli
+# Installation de angular cli
 RUN npm install -g @angular/cli
 RUN ng version
-RUN apt install iptables -y
+
+# Installation de node-sass (besoin d'un accès à Github)
+RUN npm install -g node-sass
