@@ -2,7 +2,7 @@ FROM jenkinsci/ssh-slave
 
 # Update et installation des misc 
 RUN apt-get update -y
-RUN apt-get install curl -y
+RUN apt-get install curl wget -y
 
 # Java informations
 RUN java -version
@@ -26,4 +26,4 @@ RUN npm install -g @angular/cli
 RUN ng version
 
 # Installation de node-sass (besoin d'un accès à Github)
-RUN npm install -g node-sass
+RUN mkdir /node-sass && cd /node-sadd && wget https://github.com/sass/node-sass/releases/download/v4.11.0/linux-x64-64_binding.node
